@@ -1,16 +1,20 @@
 import type { AppProps } from 'next/app';
 import { Saira } from '@next/font/google';
-import { Sidebar } from '../components/Sidebar';
 import { ChakraProvider } from '@chakra-ui/react';
+import Home from '../components/Home';
+import customTheme from '../styles/theme';
+import About from '../components/About';
 
 const saira = Saira({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
+
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={customTheme}>
       <main className={saira.className}>
         <Component {...pageProps} />
-        <Sidebar />
+        <Home />
+        <About />
       </main>
     </ChakraProvider>
   );

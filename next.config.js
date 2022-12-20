@@ -7,7 +7,10 @@ const nextConfig = {
       { loader: '@next/font/google', options: { subsets: ['latin'] } },
     ],
   },
+  i18n: {
+    locales: ['en', 'pt', 'de', 'es', 'fr', 'nl'],
+    defaultLocale: 'en'
+  }
 };
 
-// eslint-disable-next-line no-undef
 module.exports = nextConfig;
