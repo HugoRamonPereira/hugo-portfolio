@@ -1,3 +1,4 @@
+const { i18n } = require('./next-i18next.config');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,10 +8,7 @@ const nextConfig = {
       { loader: '@next/font/google', options: { subsets: ['latin'] } },
     ],
   },
-  i18n: {
-    locales: ['en', 'pt', 'de', 'es', 'fr', 'nl'],
-    defaultLocale: 'en'
-  }
+  i18n
 };
 
 module.exports = nextConfig;

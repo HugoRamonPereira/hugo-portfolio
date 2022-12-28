@@ -1,0 +1,11 @@
+.activeLink {
+  color: white;
+  background: #6B46C1;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+}
+
+.nonActive {
+  background: transparent;
+  color: #553c9a
+}
